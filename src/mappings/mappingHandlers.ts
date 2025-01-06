@@ -56,7 +56,7 @@ function convertBigNumberish(bigNumberish:BigNumberish):string{
 
 export async function handleLog(log: DepositLog): Promise<void> {
   logger.info(`New deposit event at block ${log.blockNumber}`);
-  assert(log.args, "No log.args");
+  assert(log.args, `No log.args, check tx ${log.transactionHash}`);
   const event = log.args["zklend::market::Market::Deposit"];
   const user = convertBigNumberish(event.user);
   const token = convertBigNumberish(event.token);
@@ -84,6 +84,9 @@ export async function handleTransaction(tx: WithdrawTransaction): Promise<void> 
     if(call.selector === "0x015511cc3694f64379908437d6d64458dc76d02482052bfb8a5b33a72c054c77"
         || call.selector === "0x15511cc3694f64379908437d6d64458dc76d02482052bfb8a5b33a72c054c77"
     ){
+      if(!call.decodedArgs){
+        throw new Error(`Expect decodedArgs in withdraw tx ${tx.hash}, call #${i}`)
+      }
       const withdraw = Withdraw.create({
         id: `${tx.hash}_${i}`,
         user: tx.from,

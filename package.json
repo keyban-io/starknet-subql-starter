@@ -22,8 +22,8 @@
   "author": "SubQuery Team",
   "license": "MIT",
   "dependencies": {
-    "@subql/common-starknet": "0.0.1",
-    "@subql/types-starknet": "0.0.1",
+    "@subql/common-starknet": "0.0.2-2",
+    "@subql/types-starknet": "0.0.2-2",
     "assert": "^2.0.0",
     "starknet": "latest",
     "ethers": "^5.7.2"
