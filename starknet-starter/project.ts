@@ -14,6 +14,7 @@ const dotenvPath = path.resolve(
   __dirname,
   `.env${mode !== "production" ? `.${mode}` : ""}`
 );
+
 dotenv.config({ path: dotenvPath });
 
 // Can expand the Datasource processor types via the generic param
@@ -55,7 +56,7 @@ const project: StarknetProject = {
   dataSources: [
     {
       kind: StarknetDatasourceKind.Runtime,
-      startBlock: 995339,
+      startBlock: 439849,
       options: {
         // Must be a key of assets
         abi: "zkLend",
