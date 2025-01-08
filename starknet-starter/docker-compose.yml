@@ -6,11 +6,12 @@ services:
       context: .
       dockerfile: ./docker/pg-Dockerfile
     ports:
-      - 5432:5432
+      - 5430:5430
     volumes:
       - .data/postgres:/var/lib/postgresql/data
     environment:
       POSTGRES_PASSWORD: postgres
+      PGPORT: 5430
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres"]
       interval: 5s
@@ -28,7 +29,7 @@ services:
       DB_PASS: postgres
       DB_DATABASE: postgres
       DB_HOST: postgres
-      DB_PORT: 5432
+      DB_PORT: 5430
     volumes:
       - ./:/app
     command:
@@ -59,7 +60,7 @@ services:
       DB_PASS: postgres
       DB_DATABASE: postgres
       DB_HOST: postgres
-      DB_PORT: 5432
+      DB_PORT: 5430
     command:
       - --name=app
       - --playground
