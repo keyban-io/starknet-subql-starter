@@ -56,7 +56,7 @@ const project: StarknetProject = {
   dataSources: [
     {
       kind: StarknetDatasourceKind.Runtime,
-      startBlock: 439849,
+      startBlock: 1,
       options: {
         // Must be a key of assets
         abi: "zkLend",
