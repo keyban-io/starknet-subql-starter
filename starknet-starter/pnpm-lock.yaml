@@ -9,16 +9,16 @@ importers:
   .:
     dependencies:
       '@subql/common-starknet':
-        specifier: 0.0.2-2
-        version: 0.0.2-2(bufferutil@4.0.9)(class-transformer@0.5.1)(class-validator@0.14.1)(starknet@6.11.0)(typescript@5.7.2)(utf-8-validate@5.0.10)
+        specifier: latest
+        version: 1.1.0(bufferutil@4.0.9)(class-transformer@0.5.1)(class-validator@0.14.1)(starknet@6.11.0)(typescript@5.7.2)(utf-8-validate@5.0.10)
       '@subql/types-core':
-        specifier: ^2.0.0
-        version: 2.0.0
+        specifier: latest
+        version: 2.0.2
       '@subql/types-starknet':
-        specifier: 0.0.2-2
-        version: 0.0.2-2
+        specifier: latest
+        version: 1.1.0
       assert:
-        specifier: ^2.0.0
+        specifier: latest
         version: 2.1.0
       ethers:
         specifier: ^5.7.2
@@ -27,12 +27,12 @@ importers:
         specifier: latest
         version: 6.11.0
       tslib:
-        specifier: ^2.8.1
+        specifier: latest
         version: 2.8.1
     devDependencies:
       '@subql/cli':
-        specifier: 5.4.1-1
-        version: 5.4.1-1(@types/node@22.10.5)
+        specifier: latest
+        version: 5.7.0(@types/node@22.10.5)
       '@subql/testing':
         specifier: latest
         version: 2.2.2
@@ -254,6 +254,10 @@ packages:
   '@noble/curves@1.4.2':
     resolution: {integrity: sha512-TavHr8qycMChk8UwMld0ZDRvatedkzWfH8IiaeGCfymOP5i0hSCozz9vHOL0nkwk7HRMlFnAiKpS2jrUmSybcw==}
 
+  '@noble/curves@1.7.0':
+    resolution: {integrity: sha512-UTMhXK9SeDhFJVrHeUJ5uZlI6ajXg10O6Ddocf9S6GjbSBVZsJo88HzKwXznNfGpMTRDyJkqMjNDPYgf0qFWnw==}
+    engines: {node: ^14.21.3 || >=16}
+
   '@noble/curves@1.8.0':
     resolution: {integrity: sha512-j84kjAbzEnQHaSIhRPUmB3/eVXu2k3dKPl2LOrR8fSOIL+89U+7lV117EWHtq/GHM3ReGHM46iRBdZfpc4HRUQ==}
     engines: {node: ^14.21.3 || >=16}
@@ -265,6 +269,10 @@ packages:
   '@noble/hashes@1.4.0':
     resolution: {integrity: sha512-V1JJ1WTRUqHHrOSh597hURcMqVKVGL/ea3kv0gSnEdsEZ0/+VyPghM1lMNGc00z7CIQorSvbKpuJkxvuHbvdbg==}
     engines: {node: '>= 16'}
+
+  '@noble/hashes@1.6.0':
+    resolution: {integrity: sha512-YUULf0Uk4/mAA89w+k3+yUYh6NrEvxZa5T6SY3wlMvE2chHkxFUUIDI8/XW1QSC357iA5pSnqt7XEhvFOqmDyQ==}
+    engines: {node: ^14.21.3 || >=16}
 
   '@noble/hashes@1.7.0':
     resolution: {integrity: sha512-HXydb0DgzTpDPwbVeDGCG1gIu7X6+AuU6Zl6av/E/KG8LMsvPntvq+w17CHRpKBmN6Ybdrt1eP3k4cj8DJa78w==}
@@ -381,6 +389,9 @@ packages:
   '@scure/starknet@1.0.0':
     resolution: {integrity: sha512-o5J57zY0f+2IL/mq8+AYJJ4Xpc1fOtDhr+mFQKbHnYFmm3WQrC+8zj2HEgxak1a+x86mhmBC1Kq305KUpVf0wg==}
 
+  '@scure/starknet@1.1.0':
+    resolution: {integrity: sha512-83g3M6Ix2qRsPN4wqLDqiRZ2GBNbjVWfboJE/9UjfG+MHr6oDSu/CWgy8hsBSJejr09DkkL+l0Ze4KVrlCIdtQ==}
+
   '@sindresorhus/is@0.14.0':
     resolution: {integrity: sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==}
     engines: {node: '>=6'}
@@ -392,34 +403,34 @@ packages:
   '@starknet-io/types-js@0.7.10':
     resolution: {integrity: sha512-1VtCqX4AHWJlRRSYGSn+4X1mqolI1Tdq62IwzoU2vUuEE72S1OlEeGhpvd6XsdqXcfHmVzYfj8k1XtKBQqwo9w==}
 
-  '@subql/cli@5.4.1-1':
-    resolution: {integrity: sha512-Y/XGHcw07AAK3yIbTaQKvCzZZoPI4GPRZxdUafPXvsJXhegiMyiwKYvEpSrJswc+PFlQiL8CE5w/+NvTjJRCzg==}
+  '@subql/cli@5.7.0':
+    resolution: {integrity: sha512-qU8dxFIeYN4aeg2TCkN33yBVT3GVFHe6Nh62stynDNElOKLRh015/K7LWPjHG9zQjf5XttABCB2YIO7g9MGjjQ==}
     engines: {node: '>=8.0.0'}
     hasBin: true
 
-  '@subql/common-starknet@0.0.2-2':
-    resolution: {integrity: sha512-HejByQ8f90tP4/XYY5ZsHUBiKGtmFvqMsM+fg9iuOLJrM58ykhGfan3Oh0cIiwzYkNMHYntnitDNJnItfAL84Q==}
+  '@subql/common-starknet@1.1.0':
+    resolution: {integrity: sha512-6DlPeq7XBvOUZp7F93FDujCxkfZY+ClC11PAU4TuOj1ml+I+DG2S8sZ9SKs1FOJ3fy14EDtAyOrUAC8luWZGKw==}
     peerDependencies:
       class-transformer: '*'
       class-validator: '*'
 
-  '@subql/common@5.2.2':
-    resolution: {integrity: sha512-43u8NWJoPTaclYzNq1WiytbS5UvP59Shqc+QOgeeQJrksC8xN3apXwy0p4HAegfnHOMtgMxXw0M4m31S4LkKRw==}
-
-  '@subql/common@5.2.3-0':
-    resolution: {integrity: sha512-KcibLrTA688amNKwL0cvUYD1uDK48RXR10FqdbPwMmTHwiv79RrdMg6zwTkh2j/mZPGcBxa63zLEIYvUxKykAw==}
+  '@subql/common@5.4.0':
+    resolution: {integrity: sha512-xCB13yE3mXXvdJhnsw+8epREDYnT17Lw9+2wL6ihXXWwbVqIkBMsVuEjyhMG+q4/KMj972rSD0dziy0OyxnDcA==}
 
   '@subql/testing@2.2.2':
     resolution: {integrity: sha512-cSLh77VP4sPe8F4uVSkPC0avljfzqiRFceks5qXaNau//4mGLDsN1vOvORntUQy+uRGJXc7zXg+Q+MKoIhDHVg==}
 
-  '@subql/types-core@2.0.0':
-    resolution: {integrity: sha512-5+1xYkfqJmPD4Ksb4fdfAcc2MzLHvLuQ3y0LP31bhQmtXY67YChc3z53FVZ7YAKDYiwysZq08DXTcT5obP3aiA==}
+  '@subql/types-core@2.0.1':
+    resolution: {integrity: sha512-y+QaxZYtJK1Pr3XXBVcPYtBQi/d/u5QHYiru5DxZG/lMCnqAjVmumI2dT98iKt4aDRlDAiMEBrrAiYQyxhXWhQ==}
 
-  '@subql/types-starknet@0.0.2-2':
-    resolution: {integrity: sha512-yqX5aY+dcJAuyErGkAj6rXuHulX+RmjoT/BQugUcs5gs6VHievnZXTus2T5aWBBKc2H1rSYC38hi64gG+FkNDw==}
+  '@subql/types-core@2.0.2':
+    resolution: {integrity: sha512-goKFvI+j/een6RiTPRTWO8tZA6iSfYwCj3mPh1ULoKtllJiEJ8FNxMgFjRsLMKIoA8CJc5TdMCnvr42b90SsLQ==}
 
-  '@subql/utils@2.17.0':
-    resolution: {integrity: sha512-mXbKShD2R3aCYYenTmj+NaXf/8TShjFBQORNN/FAWIXPSrmCJyVUmQhxC3D1jKmowgd7hQvRMZS2PLpvaz3poA==}
+  '@subql/types-starknet@1.1.0':
+    resolution: {integrity: sha512-fsTQ9U4kNMbk9RBE2FT1DWMe0gZXscXhNAsjBFIKDRVJ/ptG1XDmZDxatLSAR8LOd7x97kTPSouagqXKB5yLEQ==}
+
+  '@subql/utils@2.18.0':
+    resolution: {integrity: sha512-cDK7lGvdLmw4EaTb6MhpgeqZxopNgc/1I+fo7xvIcY8zX2wVvLdp9kX0tLA0imUuQgKwNDYRc6nvKJN7imWz5Q==}
 
   '@subql/x-sequelize@6.32.0-0.0.4':
     resolution: {integrity: sha512-J4ffdh2OwNSGBHzRHIudbmLrV/sJnh1eQ9heV3DVXb406KxmjUTVGfIAp//ObOImW3C3P3RY9/WyAE5AklaGBg==}
@@ -1356,6 +1367,9 @@ packages:
   fastq@1.18.0:
     resolution: {integrity: sha512-QKHXPW0hD8g4UET03SdOdunzSouc9N4AuHdsX8XNcTsuz+yYFILVNIX4l9yHABMhiEI9Db0JTTIpu0wB+Y1QQw==}
 
+  fetch-cookie@3.0.1:
+    resolution: {integrity: sha512-ZGXe8Y5Z/1FWqQ9q/CrJhkUD73DyBU9VF0hBQmEO/wPHe4A9PKTjplFDLeFX8aOsYypZUcX5Ji/eByn3VCVO3Q==}
+
   fetch-cookie@3.1.0:
     resolution: {integrity: sha512-s/XhhreJpqH0ftkGVcQt8JE9bqk+zRn4jF5mPJXWZeQMCI5odV9K+wEWYbnzFPHgQZlvPSMjS4n4yawWE8RINw==}
 
@@ -2277,6 +2291,9 @@ packages:
     resolution: {integrity: sha512-gjWOsm2SoGlgLEdAGt7a6slVOk9mGiXmPFMqrEhLQ68rhQuBnpfs3+EmlvqKyxnCo9/PPlF+9MtY02S1aFg+Jw==}
     engines: {node: '>=0.10.0'}
 
+  querystringify@2.2.0:
+    resolution: {integrity: sha512-FIqgj2EUvTa7R50u0rGsyTftzjYmv/a3hO345bZNrqabNqjtgiDMgmo4mkUjd+nzU5oF3dClKqFIPUKybUyqoQ==}
+
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
 
@@ -2336,6 +2353,9 @@ packages:
   require-from-string@2.0.2:
     resolution: {integrity: sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==}
     engines: {node: '>=0.10.0'}
+
+  requires-port@1.0.0:
+    resolution: {integrity: sha512-KigOCHcocU3XODJxsu8i/j8T9tzT4adHiecwORRQ0ZZFcp7ahwXuRU1m+yuO90C5ZUyGeGfocHDI14M3L3yDAQ==}
 
   resolve-alpn@1.2.1:
     resolution: {integrity: sha512-0a1F4l73/ZFZOakJnQ3FvkJ2+gSTQWz/r2KE5OdDY0TxPm5h4GkqkWWfM47T7HsbnOtcJVEF4epCVy6u7Q3K+g==}
@@ -2529,6 +2549,9 @@ packages:
   starknet@6.11.0:
     resolution: {integrity: sha512-u50KrGDi9fbu1Ogu7ynwF/tSeFlp3mzOg1/Y5x50tYFICImo3OfY4lOz9OtYDk404HK4eUujKkhov9tG7GAKlg==}
 
+  starknet@6.23.1:
+    resolution: {integrity: sha512-vQV9luXpmwZZs9RVZaRwm2iD8T0PYx1AzgZeQsCvD89tR0HwUF0paty27ZzuJrdPe0CmAs/ipAYFCE55jbj0RQ==}
+
   statuses@2.0.1:
     resolution: {integrity: sha512-RwNA9Z/7PrK06rYLIzFMlaF+l73iwpzsqRIFgbMLbTcLD6cOao82TaWefPXQvB2fOC4AjuYSEndS7N/mTCbkdQ==}
     engines: {node: '>= 0.8'}
@@ -2653,6 +2676,10 @@ packages:
     resolution: {integrity: sha512-nlLsUzgm1kfLXSXfRZMc1KLAugd4hqJHDTvc2hDIwS3mZAfMEuMbc03SujMF+GEcpaX/qboeycw6iO8JwVv2+g==}
     engines: {node: '>=0.8'}
 
+  tough-cookie@4.1.4:
+    resolution: {integrity: sha512-Loo5UUvLD9ScZ6jh8beX1T6sO1w2/MpCRpEP7V280GKMVUQ0Jzar2U3UJPsrdbziLEMMhu3Ujnq//rhiFuIeag==}
+    engines: {node: '>=6'}
+
   tough-cookie@5.0.0:
     resolution: {integrity: sha512-FRKsF7cz96xIIeMZ82ehjC3xW2E+O2+v11udrDYewUbszngYhsGa8z6YUMMzO9QJZzzyd0nGGXnML/TReX6W8Q==}
     engines: {node: '>=16'}
@@ -2731,6 +2758,11 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
+  typescript@5.8.2:
+    resolution: {integrity: sha512-aJn6wq13/afZp/jT9QZmwEjDqqvSGp1VT5GVg+f/t6/oVyrgXM6BY1h9BRh/O5p3PlUPAe+WuiEZOmb/49RqoQ==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
   typical@4.0.0:
     resolution: {integrity: sha512-VAH4IvQ7BDFYglMd7BPRDfLgxZZX4O4TFcRDA6EN5X7erNJJq+McIEp8np9aVtxrCJ6qx4GTYVfOWNjcqwZgRw==}
     engines: {node: '>=8'}
@@ -2751,6 +2783,10 @@ packages:
 
   universalify@0.1.2:
     resolution: {integrity: sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg==}
+    engines: {node: '>= 4.0.0'}
+
+  universalify@0.2.0:
+    resolution: {integrity: sha512-CJ1QgKmNg3CwvAv/kOFmtnEN05f0D/cn9QntgNOQlQF9dgvVTHj3t+8JPdjqawCHk7V/KA+fbUqzZ9XWhcqPUg==}
     engines: {node: '>= 4.0.0'}
 
   universalify@2.0.1:
@@ -2780,6 +2816,9 @@ packages:
   url-parse-lax@3.0.0:
     resolution: {integrity: sha512-NjFKA0DidqPa5ciFcSrXnAltTtzz84ogy+NebPvfEgAck0+TNg4UJ4IN+fB7zRZfbgUf0syOo9MDxFkDSMuFaQ==}
     engines: {node: '>=4'}
+
+  url-parse@1.5.10:
+    resolution: {integrity: sha512-WypcfiRhfeUP9vvF0j6rw0J3hrWrw6iZv3+22h6iRMJ/8z1Tj6XfLP4DsUix5MhMPnXpiHDoKyoZ/bdCkwBCiQ==}
 
   url-set-query@1.0.0:
     resolution: {integrity: sha512-3AChu4NiXquPfeckE5R5cGdiHCMWJx1dwCWOmWIL4KHAziJNOFIYJlpGFeKDvwLPHovZRCxK3cYlwzqI9Vp+Gg==}
@@ -3045,6 +3084,7 @@ packages:
   yaeti@0.0.6:
     resolution: {integrity: sha512-MvQa//+KcZCUkBTIC9blM+CU9J2GzuTytsOUwf2lidtvkx/6gnEp1QvJv34t9vdjhFmha/mUiNDbN0D0mJWdug==}
     engines: {node: '>=0.10.32'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
 
   yallist@3.1.1:
     resolution: {integrity: sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g==}
@@ -3505,6 +3545,10 @@ snapshots:
     dependencies:
       '@noble/hashes': 1.4.0
 
+  '@noble/curves@1.7.0':
+    dependencies:
+      '@noble/hashes': 1.6.0
+
   '@noble/curves@1.8.0':
     dependencies:
       '@noble/hashes': 1.7.0
@@ -3512,6 +3556,8 @@ snapshots:
   '@noble/hashes@1.3.3': {}
 
   '@noble/hashes@1.4.0': {}
+
+  '@noble/hashes@1.6.0': {}
 
   '@noble/hashes@1.7.0': {}
 
@@ -3527,7 +3573,7 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.18.0
 
-  '@oclif/core@2.16.0(@types/node@22.10.5)(typescript@5.7.2)':
+  '@oclif/core@2.16.0(@types/node@22.10.5)(typescript@5.8.2)':
     dependencies:
       '@types/cli-progress': 3.11.6
       ansi-escapes: 4.3.2
@@ -3552,7 +3598,7 @@ snapshots:
       strip-ansi: 6.0.1
       supports-color: 8.1.1
       supports-hyperlinks: 2.3.0
-      ts-node: 10.9.2(@types/node@22.10.5)(typescript@5.7.2)
+      ts-node: 10.9.2(@types/node@22.10.5)(typescript@5.8.2)
       tslib: 2.8.1
       widest-line: 3.1.0
       wordwrap: 1.0.0
@@ -3685,18 +3731,23 @@ snapshots:
       '@noble/curves': 1.3.0
       '@noble/hashes': 1.3.3
 
+  '@scure/starknet@1.1.0':
+    dependencies:
+      '@noble/curves': 1.7.0
+      '@noble/hashes': 1.6.0
+
   '@sindresorhus/is@0.14.0': {}
 
   '@sindresorhus/is@4.6.0': {}
 
   '@starknet-io/types-js@0.7.10': {}
 
-  '@subql/cli@5.4.1-1(@types/node@22.10.5)':
+  '@subql/cli@5.7.0(@types/node@22.10.5)':
     dependencies:
       '@inquirer/prompts': 5.5.0
-      '@oclif/core': 2.16.0(@types/node@22.10.5)(typescript@5.7.2)
-      '@subql/common': 5.2.3-0
-      '@subql/utils': 2.17.0
+      '@oclif/core': 2.16.0(@types/node@22.10.5)(typescript@5.8.2)
+      '@subql/common': 5.4.0
+      '@subql/utils': 2.18.0
       boxen: 5.1.2
       chalk: 4.1.2
       ejs: 3.1.10
@@ -3710,10 +3761,10 @@ snapshots:
       semver: 7.6.3
       simple-git: 3.27.0
       terser-webpack-plugin: 5.3.11(webpack@5.97.1)
-      ts-loader: 9.5.1(typescript@5.7.2)(webpack@5.97.1)
-      ts-node: 10.9.2(@types/node@22.10.5)(typescript@5.7.2)
+      ts-loader: 9.5.1(typescript@5.8.2)(webpack@5.97.1)
+      ts-node: 10.9.2(@types/node@22.10.5)(typescript@5.8.2)
       tslib: 2.8.1
-      typescript: 5.7.2
+      typescript: 5.8.2
       update-notifier: 5.1.0
       webpack: 5.97.1
       webpack-merge: 6.0.1
@@ -3740,10 +3791,10 @@ snapshots:
       - uglify-js
       - webpack-cli
 
-  '@subql/common-starknet@0.0.2-2(bufferutil@4.0.9)(class-transformer@0.5.1)(class-validator@0.14.1)(starknet@6.11.0)(typescript@5.7.2)(utf-8-validate@5.0.10)':
+  '@subql/common-starknet@1.1.0(bufferutil@4.0.9)(class-transformer@0.5.1)(class-validator@0.14.1)(starknet@6.11.0)(typescript@5.7.2)(utf-8-validate@5.0.10)':
     dependencies:
-      '@subql/common': 5.2.2
-      '@subql/types-starknet': 0.0.2-2
+      '@subql/common': 5.4.0
+      '@subql/types-starknet': 1.1.0
       '@typechain/starknet': 0.2.9(bufferutil@4.0.9)(starknet@6.11.0)(typechain@8.3.2(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
       class-transformer: 0.5.1
       class-validator: 0.14.1
@@ -3760,23 +3811,9 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  '@subql/common@5.2.2':
+  '@subql/common@5.4.0':
     dependencies:
-      '@subql/types-core': 2.0.0
-      axios: 0.28.1
-      class-transformer: 0.5.1
-      class-validator: 0.14.1
-      form-data: 4.0.1
-      js-yaml: 4.1.0
-      reflect-metadata: 0.1.14
-      semver: 7.6.3
-      update-notifier: 5.1.0
-    transitivePeerDependencies:
-      - debug
-
-  '@subql/common@5.2.3-0':
-    dependencies:
-      '@subql/types-core': 2.0.0
+      '@subql/types-core': 2.0.1
       axios: 0.28.1
       class-transformer: 0.5.1
       class-validator: 0.14.1
@@ -3790,19 +3827,21 @@ snapshots:
 
   '@subql/testing@2.2.2':
     dependencies:
-      '@subql/types-core': 2.0.0
+      '@subql/types-core': 2.0.2
 
-  '@subql/types-core@2.0.0': {}
+  '@subql/types-core@2.0.1': {}
 
-  '@subql/types-starknet@0.0.2-2':
+  '@subql/types-core@2.0.2': {}
+
+  '@subql/types-starknet@1.1.0':
     dependencies:
       '@starknet-io/types-js': 0.7.10
-      '@subql/types-core': 2.0.0
-      starknet: 6.11.0
+      '@subql/types-core': 2.0.2
+      starknet: 6.23.1
     transitivePeerDependencies:
       - encoding
 
-  '@subql/utils@2.17.0':
+  '@subql/utils@2.18.0':
     dependencies:
       '@polkadot/util': 13.3.1
       '@polkadot/util-crypto': 13.3.1(@polkadot/util@13.3.1)
@@ -4910,6 +4949,11 @@ snapshots:
     dependencies:
       reusify: 1.0.4
 
+  fetch-cookie@3.0.1:
+    dependencies:
+      set-cookie-parser: 2.7.1
+      tough-cookie: 4.1.4
+
   fetch-cookie@3.1.0:
     dependencies:
       set-cookie-parser: 2.7.1
@@ -5791,6 +5835,8 @@ snapshots:
       object-assign: 4.1.1
       strict-uri-encode: 1.1.0
 
+  querystringify@2.2.0: {}
+
   queue-microtask@1.2.3: {}
 
   quick-format-unescaped@4.0.4: {}
@@ -5865,6 +5911,8 @@ snapshots:
   require-directory@2.1.1: {}
 
   require-from-string@2.0.2: {}
+
+  requires-port@1.0.0: {}
 
   resolve-alpn@1.2.1: {}
 
@@ -6120,6 +6168,22 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
+  starknet@6.23.1:
+    dependencies:
+      '@noble/curves': 1.7.0
+      '@noble/hashes': 1.6.0
+      '@scure/base': 1.2.1
+      '@scure/starknet': 1.1.0
+      abi-wan-kanabi: 2.2.4
+      fetch-cookie: 3.0.1
+      isomorphic-fetch: 3.0.0
+      lossless-json: 4.0.2
+      pako: 2.1.0
+      starknet-types-07: '@starknet-io/types-js@0.7.10'
+      ts-mixer: 6.0.4
+    transitivePeerDependencies:
+      - encoding
+
   statuses@2.0.1: {}
 
   strict-uri-encode@1.1.0: {}
@@ -6253,6 +6317,13 @@ snapshots:
       psl: 1.15.0
       punycode: 2.3.1
 
+  tough-cookie@4.1.4:
+    dependencies:
+      psl: 1.15.0
+      punycode: 2.3.1
+      universalify: 0.2.0
+      url-parse: 1.5.10
+
   tough-cookie@5.0.0:
     dependencies:
       tldts: 6.1.71
@@ -6270,19 +6341,19 @@ snapshots:
     dependencies:
       typescript: 5.7.2
 
-  ts-loader@9.5.1(typescript@5.7.2)(webpack@5.97.1):
+  ts-loader@9.5.1(typescript@5.8.2)(webpack@5.97.1):
     dependencies:
       chalk: 4.1.2
       enhanced-resolve: 5.18.0
       micromatch: 4.0.8
       semver: 7.6.3
       source-map: 0.7.4
-      typescript: 5.7.2
+      typescript: 5.8.2
       webpack: 5.97.1
 
   ts-mixer@6.0.4: {}
 
-  ts-node@10.9.2(@types/node@22.10.5)(typescript@5.7.2):
+  ts-node@10.9.2(@types/node@22.10.5)(typescript@5.8.2):
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
       '@tsconfig/node10': 1.0.11
@@ -6296,7 +6367,7 @@ snapshots:
       create-require: 1.1.1
       diff: 4.0.2
       make-error: 1.3.6
-      typescript: 5.7.2
+      typescript: 5.8.2
       v8-compile-cache-lib: 3.0.1
       yn: 3.1.1
 
@@ -6341,6 +6412,8 @@ snapshots:
 
   typescript@5.7.2: {}
 
+  typescript@5.8.2: {}
+
   typical@4.0.0: {}
 
   typical@5.2.0: {}
@@ -6354,6 +6427,8 @@ snapshots:
       crypto-random-string: 2.0.0
 
   universalify@0.1.2: {}
+
+  universalify@0.2.0: {}
 
   universalify@2.0.1: {}
 
@@ -6391,6 +6466,11 @@ snapshots:
   url-parse-lax@3.0.0:
     dependencies:
       prepend-http: 2.0.0
+
+  url-parse@1.5.10:
+    dependencies:
+      querystringify: 2.2.0
+      requires-port: 1.0.0
 
   url-set-query@1.0.0: {}
 

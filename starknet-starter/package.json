@@ -22,16 +22,16 @@
   "author": "SubQuery Team",
   "license": "MIT",
   "dependencies": {
-    "@subql/common-starknet": "0.0.2-2",
-    "@subql/types-core": "^2.0.0",
-    "@subql/types-starknet": "0.0.2-2",
-    "assert": "^2.0.0",
+    "@subql/common-starknet": "latest",
+    "@subql/types-core": "latest",
+    "@subql/types-starknet": "latest",
+    "assert": "latest",
     "ethers": "^5.7.2",
     "starknet": "latest",
-    "tslib": "^2.8.1"
+    "tslib": "latest"
   },
   "devDependencies": {
-    "@subql/cli": "5.4.1-1",
+    "@subql/cli": "latest",
     "@subql/testing": "latest",
     "dotenv": "latest",
     "typescript": "latest"

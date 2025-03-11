@@ -19,7 +19,7 @@ services:
       retries: 5
 
   subquery-node:
-    image: subquerynetwork/subql-node-starknet:v0.0.2-3
+    image: subquerynetwork/subql-node-starknet:v5.9.0
     depends_on:
       "postgres":
         condition: service_healthy
@@ -36,8 +36,7 @@ services:
       - ${SUB_COMMAND:-} # set SUB_COMMAND env variable to "test" to run tests
       - -f=/app
       - --db-schema=app
-      - --workers=4
-      - --batch-size=10
+      - --batch-size=1
     healthcheck:
       test: ["CMD", "curl", "-f", "http://subquery-node:3000/ready"]
       interval: 3s

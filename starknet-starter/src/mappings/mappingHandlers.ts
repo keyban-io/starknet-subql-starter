@@ -63,24 +63,13 @@ async function checkGetAddress(addressString: string): Promise<Address> {
 }
 
 export async function handleLog(log: DepositLog): Promise<void> {
+  function sleep(ms: number): Promise<void> {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+  }
+
+  await sleep(2000);
   logger.info(`New deposit event at block ${log.blockNumber}`);
-  assert(log.args, `No log.args, check tx ${log.transactionHash}`);
-  const event = log.args["zklend::market::Market::Deposit"];
-  const token = convertBigNumberish(event.token);
-
-  // Get Address
-  const addressString = convertBigNumberish(event.user);
-  const address = await checkGetAddress(addressString);
-
-  const deposit = Deposit.create({
-    id: `${log.transactionHash}_${address.id}`,
-    token: token,
-    amount: BigInt(event.face_amount),
-    addressId: address.id,
-    createdBlock: BigInt(log.blockNumber),
-    created: new Date(log.transaction.blockTimestamp * 1000),
-  });
-  await deposit.save();
+  logger.info(`New deposit event at block ${log.transactionHash}`);
 }
 
 type WithdrawTransaction = StarknetTransaction;

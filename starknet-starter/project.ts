@@ -56,7 +56,8 @@ const project: StarknetProject = {
   dataSources: [
     {
       kind: StarknetDatasourceKind.Runtime,
-      startBlock: 1,
+      startBlock: 227912,
+      endBlock: 227922,
       options: {
         // Must be a key of assets
         abi: "zkLend",
@@ -68,20 +69,6 @@ const project: StarknetProject = {
       mapping: {
         file: "./dist/index.js",
         handlers: [
-          {
-            kind: StarknetHandlerKind.Call,
-            handler: "handleTransaction",
-            filter: {
-              to: "0x04c0a5193d58f74fbace4b74dcf65481e734ed1714121bdc571da345540efa05",
-              type: "INVOKE",
-              /**
-               * The function can either be the function fragment or signature
-               * function: 'withdraw'
-               * function: '0x015511cc3694f64379908437d6d64458dc76d02482052bfb8a5b33a72c054c77'
-               */
-              function: "withdraw",
-            },
-          },
           {
             kind: StarknetHandlerKind.Event,
             handler: "handleLog",
