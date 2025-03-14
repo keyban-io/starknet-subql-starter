@@ -1,0 +1,79 @@
+2025-03-14T05:47:35.747Z <subql-node> INFO Current @subql/node-starknet version is 5.9.0 
+2025-03-14T05:47:35.747Z <subql-node> INFO Current @subql/node-starknet version is 5.9.0 
+2025-03-14T05:47:35.814Z <ProjectUpgradeService> INFO Projects: {
+  "205": "/app"
+} 
+2025-03-14T05:47:35.857Z <nestjs> INFO Starting Nest application... 
+2025-03-14T05:47:35.884Z <nestjs> INFO AppModule dependencies initialized 
+2025-03-14T05:47:35.884Z <nestjs> INFO ConfigureModule dependencies initialized 
+2025-03-14T05:47:35.885Z <nestjs> INFO PrometheusModule dependencies initialized 
+2025-03-14T05:47:35.885Z <api> WARN skipTransactions is disabled, the project contains only event handlers, it could be enabled to improve indexing performance. 
+2025-03-14T05:47:35.885Z <api.starknet> INFO Api host: starknet-devnet, method: http 
+2025-03-14T05:47:35.889Z <nestjs> INFO DiscoveryModule dependencies initialized 
+2025-03-14T05:47:35.900Z <nestjs> INFO ScheduleModule dependencies initialized 
+2025-03-14T05:47:35.900Z <nestjs> INFO EventEmitterModule dependencies initialized 
+2025-03-14T05:47:35.910Z <db> WARN Database does not support SSL connection, will try to connect without it 
+2025-03-14T05:47:38.989Z <nestjs> INFO DbModule dependencies initialized 
+2025-03-14T05:47:38.990Z <indexer> INFO indexer manager start 
+2025-03-14T05:47:38.991Z <nestjs> INFO MetaModule dependencies initialized 
+2025-03-14T05:47:38.991Z <nestjs> INFO FetchModule dependencies initialized 
+2025-03-14T05:47:38.991Z <nestjs> INFO CoreModule dependencies initialized 
+2025-03-14T05:47:38.994Z <nestjs> INFO AdminController {/admin}: 
+2025-03-14T05:47:38.995Z <nestjs> INFO Mapped {/admin/index_history/range, GET} route 
+2025-03-14T05:47:38.996Z <nestjs> INFO Mapped {/admin/index_history/forks, GET} route 
+2025-03-14T05:47:38.996Z <nestjs> INFO Mapped {/admin/index_history/block/:blockHeight, GET} route 
+2025-03-14T05:47:38.996Z <nestjs> INFO Mapped {/admin/poi/range, GET} route 
+2025-03-14T05:47:38.997Z <nestjs> INFO Mapped {/admin/poi, GET} route 
+2025-03-14T05:47:38.997Z <nestjs> INFO Mapped {/admin/rewind, POST} route 
+2025-03-14T05:47:38.997Z <nestjs> INFO Mapped {/admin/db_size, GET} route 
+2025-03-14T05:47:38.997Z <nestjs> INFO HealthController {/health}: 
+2025-03-14T05:47:38.997Z <nestjs> INFO Mapped {/health, GET} route 
+2025-03-14T05:47:38.997Z <nestjs> INFO ReadyController {/ready}: 
+2025-03-14T05:47:38.998Z <nestjs> INFO Mapped {/ready, GET} route 
+2025-03-14T05:47:38.998Z <nestjs> INFO MetaController {/meta}: 
+2025-03-14T05:47:38.998Z <nestjs> INFO Mapped {/meta, GET} route 
+2025-03-14T05:47:38.998Z <nestjs> INFO PrometheusController {/metrics}: 
+2025-03-14T05:47:38.998Z <nestjs> INFO Mapped {/metrics, GET} route 
+2025-03-14T05:47:39.003Z <nestjs> INFO Nest application successfully started 
+2025-03-14T05:47:39.184Z <StoreService> INFO Historical state is height 
+2025-03-14T05:47:39.229Z <dynamic-ds> INFO Loaded 0 dynamic datasources 
+2025-03-14T05:47:39.482Z <api> WARN skipTransactions is disabled, the project contains only event handlers, it could be enabled to improve indexing performance. 
+2025-03-14T05:47:39.483Z <UnfinalizedBlocks> INFO Unfinalized blocks is enabled 
+2025-03-14T05:47:39.490Z <api.starknet> INFO First block is not finalized on L1. 
+2025-03-14T05:47:39.697Z <BlockDispatcherService> INFO Enqueueing blocks 205...205, total 1 blocks 
+2025-03-14T05:47:39.699Z <BlockDispatcherService> INFO Enqueueing blocks 206...206, total 1 blocks 
+2025-03-14T05:47:39.700Z <BlockDispatcherService> INFO Enqueueing blocks 207...207, total 1 blocks 
+2025-03-14T05:47:39.700Z <BlockDispatcherService> INFO Enqueueing blocks 208...208, total 1 blocks 
+2025-03-14T05:47:39.701Z <subql-node> INFO Node started on port: 3000 
+2025-03-14T05:47:40.702Z <BlockDispatcherService> INFO Enqueueing blocks 209...209, total 1 blocks 
+2025-03-14T05:47:40.702Z <BlockDispatcherService> INFO Enqueueing blocks 210...210, total 1 blocks 
+2025-03-14T05:47:40.702Z <BlockDispatcherService> INFO Enqueueing blocks 211...211, total 1 blocks 
+[2025-03-14T05:47:40.706Z] INFO: Using default public node url, please provide nodeUrl in provider options!
+2025-03-14T05:47:40.760Z <api.starknet> WARN Failed to parse log data: Cannot convert undefined to a BigInt 
+2025-03-14T05:47:41.702Z <BlockDispatcherService> INFO Enqueueing blocks 212...212, total 1 blocks 
+2025-03-14T05:47:43.022Z <sandbox> INFO New Tpp Transfer event at block 207 
+[2025-03-14T05:47:43.023Z] INFO: Using default public node url, please provide nodeUrl in provider options!
+2025-03-14T05:47:43.027Z <api.starknet> WARN Failed to parse log data: Cannot convert undefined to a BigInt 
+2025-03-14T05:47:43.706Z <BlockDispatcherService> INFO Enqueueing blocks 213...213, total 1 blocks 
+2025-03-14T05:47:43.706Z <BlockDispatcherService> INFO Enqueueing blocks 214...214, total 1 blocks 
+2025-03-14T05:47:45.038Z <sandbox> INFO New Tpp Transfer event at block 209 
+2025-03-14T05:47:45.707Z <BlockDispatcherService> INFO Enqueueing blocks 215...215, total 1 blocks 
+2025-03-14T05:47:45.707Z <BlockDispatcherService> INFO Enqueueing blocks 216...216, total 1 blocks 
+2025-03-14T05:47:45.707Z <BlockDispatcherService> INFO Enqueueing blocks 217...217, total 1 blocks 
+[2025-03-14T05:47:45.715Z] INFO: Using default public node url, please provide nodeUrl in provider options!
+2025-03-14T05:47:45.719Z <api.starknet> WARN Failed to parse log data: Cannot convert undefined to a BigInt 
+2025-03-14T05:47:46.708Z <BlockDispatcherService> INFO Enqueueing blocks 218...218, total 1 blocks 
+2025-03-14T05:47:46.708Z <BlockDispatcherService> INFO Enqueueing blocks 219...219, total 1 blocks 
+2025-03-14T05:47:47.720Z <sandbox> INFO New Tpp Transfer event at block 214 
+[2025-03-14T05:47:47.721Z] INFO: Using default public node url, please provide nodeUrl in provider options!
+2025-03-14T05:47:47.726Z <api.starknet> WARN Failed to parse log data: Cannot convert undefined to a BigInt 
+2025-03-14T05:47:48.720Z <BlockDispatcherService> INFO Enqueueing blocks 220...220, total 1 blocks 
+2025-03-14T05:47:48.720Z <BlockDispatcherService> INFO Enqueueing blocks 221...221, total 1 blocks 
+2025-03-14T05:47:49.727Z <sandbox> INFO New Tpp Transfer event at block 216 
+[2025-03-14T05:47:49.728Z] INFO: Using default public node url, please provide nodeUrl in provider options!
+2025-03-14T05:47:50.721Z <BlockDispatcherService> INFO Enqueueing blocks 222...222, total 1 blocks 
+2025-03-14T05:47:50.721Z <BlockDispatcherService> INFO Enqueueing blocks 223...223, total 1 blocks 
+2025-03-14T05:47:51.732Z <sandbox> INFO New Tpp Transfer event at block 218 
+2025-03-14T05:47:51.736Z <api.starknet> WARN Failed to parse log data: Cannot convert undefined to a BigInt 
+2025-03-14T05:47:53.738Z <sandbox> INFO New Tpp Transfer event at block 218 
+2025-03-14T05:47:53.743Z <StoreCacheService> ERROR All data sources have been processed up to block number 220. Exiting gracefully... 

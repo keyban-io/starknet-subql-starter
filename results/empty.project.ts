@@ -54,104 +54,23 @@ const project: StarknetProject = {
     endpoint: process.env.ENDPOINT!?.split(",") as string[] | string,
   },
   dataSources: [
-//     {
-//       kind: StarknetDatasourceKind.Runtime,
-//       startBlock: 205,
-//       endBlock: 220,
-//       mapping: {
-//         file: "./dist/index.js",
-//         handlers: [
-//           /// Static data source handler
-//           {
-//             kind: StarknetHandlerKind.Event,
-//             handler: "emptyHandler",
-//           },
-//         ],
-//       },
-//     },
     {
       kind: StarknetDatasourceKind.Runtime,
       startBlock: 205,
       endBlock: 220,
-      options: {
-        abi: "udc",
-        address:
-           "0x041a78e741e5af2fec34b695679bc6891742439f7afb8484ecd7766661ad02bf", 
-      },
-      assets: new Map([
-        ["udc", { file: "./abis/udc.abi.json" }], 
-      ]),
-
       mapping: {
         file: "./dist/index.js",
         handlers: [
+          /// Static data source handler
           {
             kind: StarknetHandlerKind.Event,
-            handler: "handleContractDeployed",
-            filter: {
-              topics: [
-                "ContractDeployed", 
-              ],
-            },
+            handler: "emptyHandler",
           },
         ],
       },
     },
-    // {
-    //   kind: StarknetDatasourceKind.Runtime,
-    //   startBlock: 205,
-    //   endBlock: 220,
-    //   options:{
-    //     abi: "tpp",
-    //     address: "0x026432b99835556745918e5fc8507105eeecfeeaf0fb375d3fa5014422a49ca0",
-    //   },
-    //   assets: new Map([
-    //     ["tpp", { file: "./abis/tpp.abi.json" }] 
-    //   ]),
-    //   mapping: {
-    //     file: "./dist/index.js",
-    //     handlers: [
-    //       {
-    //         kind: StarknetHandlerKind.Event,
-    //         handler: "handleTransfer",
-    //         filter: {
-    //           topics: [
-    //             "Transfer", 
-    //           ],
-    //         },
-    //       },
-    //     ],
-    //   }
-    // },
+
   ],
-  templates: 
-    [
-      {
-        kind: StarknetDatasourceKind.Runtime,
-        name: "tppTransfer",
-        options:{
-          abi: "tpp",
-        },
-        assets: new Map([
-          ["tpp", { file: "./abis/tpp.abi.json" }] 
-        ]),
-        mapping: {
-          file: "./dist/index.js",
-          handlers: [
-            {
-              kind: StarknetHandlerKind.Event,
-              handler: "handleTransferDynamically",
-              filter: {
-                topics: [
-                  "Transfer", 
-                ],
-              },
-            },
-          ],
-        }
-      }
-    ],
-  
   repository: "https://github.com/subquery/starknet-subql-starter",
 };
 

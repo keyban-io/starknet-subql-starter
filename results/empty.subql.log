@@ -1,0 +1,88 @@
+2025-03-14T05:34:48.586Z <subql-node> INFO Current @subql/node-starknet version is 5.9.0 
+2025-03-14T05:34:48.586Z <subql-node> INFO Current @subql/node-starknet version is 5.9.0 
+2025-03-14T05:34:48.653Z <ProjectUpgradeService> INFO Projects: {
+  "205": "/app"
+} 
+2025-03-14T05:34:48.696Z <nestjs> INFO Starting Nest application... 
+2025-03-14T05:34:48.727Z <nestjs> INFO AppModule dependencies initialized 
+2025-03-14T05:34:48.727Z <nestjs> INFO ConfigureModule dependencies initialized 
+2025-03-14T05:34:48.727Z <nestjs> INFO PrometheusModule dependencies initialized 
+2025-03-14T05:34:48.728Z <api> WARN skipTransactions is disabled, the project contains only event handlers, it could be enabled to improve indexing performance. 
+2025-03-14T05:34:48.728Z <api.starknet> INFO Api host: starknet-devnet, method: http 
+2025-03-14T05:34:48.732Z <nestjs> INFO DiscoveryModule dependencies initialized 
+2025-03-14T05:34:48.744Z <nestjs> INFO ScheduleModule dependencies initialized 
+2025-03-14T05:34:48.744Z <nestjs> INFO EventEmitterModule dependencies initialized 
+2025-03-14T05:34:48.761Z <db> WARN Database does not support SSL connection, will try to connect without it 
+2025-03-14T05:34:51.840Z <nestjs> INFO DbModule dependencies initialized 
+2025-03-14T05:34:51.841Z <indexer> INFO indexer manager start 
+2025-03-14T05:34:51.842Z <nestjs> INFO MetaModule dependencies initialized 
+2025-03-14T05:34:51.842Z <nestjs> INFO FetchModule dependencies initialized 
+2025-03-14T05:34:51.842Z <nestjs> INFO CoreModule dependencies initialized 
+2025-03-14T05:34:51.845Z <nestjs> INFO AdminController {/admin}: 
+2025-03-14T05:34:51.846Z <nestjs> INFO Mapped {/admin/index_history/range, GET} route 
+2025-03-14T05:34:51.847Z <nestjs> INFO Mapped {/admin/index_history/forks, GET} route 
+2025-03-14T05:34:51.847Z <nestjs> INFO Mapped {/admin/index_history/block/:blockHeight, GET} route 
+2025-03-14T05:34:51.847Z <nestjs> INFO Mapped {/admin/poi/range, GET} route 
+2025-03-14T05:34:51.848Z <nestjs> INFO Mapped {/admin/poi, GET} route 
+2025-03-14T05:34:51.848Z <nestjs> INFO Mapped {/admin/rewind, POST} route 
+2025-03-14T05:34:51.848Z <nestjs> INFO Mapped {/admin/db_size, GET} route 
+2025-03-14T05:34:51.848Z <nestjs> INFO HealthController {/health}: 
+2025-03-14T05:34:51.848Z <nestjs> INFO Mapped {/health, GET} route 
+2025-03-14T05:34:51.848Z <nestjs> INFO ReadyController {/ready}: 
+2025-03-14T05:34:51.848Z <nestjs> INFO Mapped {/ready, GET} route 
+2025-03-14T05:34:51.849Z <nestjs> INFO MetaController {/meta}: 
+2025-03-14T05:34:51.849Z <nestjs> INFO Mapped {/meta, GET} route 
+2025-03-14T05:34:51.849Z <nestjs> INFO PrometheusController {/metrics}: 
+2025-03-14T05:34:51.849Z <nestjs> INFO Mapped {/metrics, GET} route 
+2025-03-14T05:34:51.853Z <nestjs> INFO Nest application successfully started 
+2025-03-14T05:34:51.991Z <StoreService> INFO Historical state is height 
+2025-03-14T05:34:52.028Z <dynamic-ds> INFO Loaded 0 dynamic datasources 
+2025-03-14T05:34:52.271Z <api> WARN skipTransactions is disabled, the project contains only event handlers, it could be enabled to improve indexing performance. 
+2025-03-14T05:34:52.272Z <UnfinalizedBlocks> INFO Unfinalized blocks is enabled 
+2025-03-14T05:34:52.279Z <api.starknet> INFO First block is not finalized on L1. 
+2025-03-14T05:34:52.681Z <BlockDispatcherService> INFO Enqueueing blocks 205...205, total 1 blocks 
+2025-03-14T05:34:52.683Z <BlockDispatcherService> INFO Enqueueing blocks 206...206, total 1 blocks 
+2025-03-14T05:34:52.683Z <BlockDispatcherService> INFO Enqueueing blocks 207...207, total 1 blocks 
+2025-03-14T05:34:52.684Z <BlockDispatcherService> INFO Enqueueing blocks 208...208, total 1 blocks 
+2025-03-14T05:34:52.684Z <subql-node> INFO Node started on port: 3000 
+2025-03-14T05:34:53.685Z <BlockDispatcherService> INFO Enqueueing blocks 209...209, total 1 blocks 
+2025-03-14T05:34:53.685Z <BlockDispatcherService> INFO Enqueueing blocks 210...210, total 1 blocks 
+2025-03-14T05:34:53.685Z <BlockDispatcherService> INFO Enqueueing blocks 211...211, total 1 blocks 
+[2025-03-14T05:34:53.691Z] INFO: Using default public node url, please provide nodeUrl in provider options!
+2025-03-14T05:34:53.733Z <api.starknet> WARN No ABI provided for datasource 
+2025-03-14T05:34:54.686Z <BlockDispatcherService> INFO Enqueueing blocks 212...212, total 1 blocks 
+2025-03-14T05:34:55.998Z <sandbox> INFO Empty handler at block 207 
+[2025-03-14T05:34:55.999Z] INFO: Using default public node url, please provide nodeUrl in provider options!
+2025-03-14T05:34:55.999Z <api.starknet> WARN No ABI provided for datasource 
+2025-03-14T05:34:56.705Z <BlockDispatcherService> INFO Enqueueing blocks 213...213, total 1 blocks 
+2025-03-14T05:34:56.705Z <BlockDispatcherService> INFO Enqueueing blocks 214...214, total 1 blocks 
+2025-03-14T05:34:58.003Z <sandbox> INFO Empty handler at block 209 
+2025-03-14T05:34:58.003Z <api.starknet> WARN No ABI provided for datasource 
+2025-03-14T05:35:00.003Z <sandbox> INFO Empty handler at block 209 
+2025-03-14T05:35:00.004Z <api.starknet> WARN No ABI provided for datasource 
+2025-03-14T05:35:02.021Z <sandbox> INFO Empty handler at block 209 
+2025-03-14T05:35:02.719Z <BlockDispatcherService> INFO Enqueueing blocks 215...215, total 1 blocks 
+2025-03-14T05:35:02.720Z <BlockDispatcherService> INFO Enqueueing blocks 216...216, total 1 blocks 
+2025-03-14T05:35:02.720Z <BlockDispatcherService> INFO Enqueueing blocks 217...217, total 1 blocks 
+[2025-03-14T05:35:02.728Z] INFO: Using default public node url, please provide nodeUrl in provider options!
+2025-03-14T05:35:02.728Z <api.starknet> WARN No ABI provided for datasource 
+2025-03-14T05:35:03.723Z <BlockDispatcherService> INFO Enqueueing blocks 218...218, total 1 blocks 
+2025-03-14T05:35:03.723Z <BlockDispatcherService> INFO Enqueueing blocks 219...219, total 1 blocks 
+2025-03-14T05:35:04.729Z <sandbox> INFO Empty handler at block 214 
+[2025-03-14T05:35:04.729Z] INFO: Using default public node url, please provide nodeUrl in provider options!
+2025-03-14T05:35:04.730Z <api.starknet> WARN No ABI provided for datasource 
+2025-03-14T05:35:05.724Z <BlockDispatcherService> INFO Enqueueing blocks 220...220, total 1 blocks 
+2025-03-14T05:35:05.724Z <BlockDispatcherService> INFO Enqueueing blocks 221...221, total 1 blocks 
+2025-03-14T05:35:06.736Z <sandbox> INFO Empty handler at block 216 
+2025-03-14T05:35:06.736Z <api.starknet> WARN No ABI provided for datasource 
+2025-03-14T05:35:08.738Z <sandbox> INFO Empty handler at block 216 
+2025-03-14T05:35:08.738Z <api.starknet> WARN No ABI provided for datasource 
+2025-03-14T05:35:10.740Z <sandbox> INFO Empty handler at block 216 
+[2025-03-14T05:35:10.741Z] INFO: Using default public node url, please provide nodeUrl in provider options!
+2025-03-14T05:35:10.741Z <api.starknet> WARN No ABI provided for datasource 
+2025-03-14T05:35:11.746Z <BlockDispatcherService> INFO Enqueueing blocks 222...222, total 1 blocks 
+2025-03-14T05:35:11.746Z <BlockDispatcherService> INFO Enqueueing blocks 223...223, total 1 blocks 
+2025-03-14T05:35:12.744Z <sandbox> INFO Empty handler at block 218 
+2025-03-14T05:35:12.744Z <api.starknet> WARN No ABI provided for datasource 
+2025-03-14T05:35:14.757Z <sandbox> INFO Empty handler at block 218 
+2025-03-14T05:35:14.758Z <StoreCacheService> ERROR All data sources have been processed up to block number 220. Exiting gracefully... 

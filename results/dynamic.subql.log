@@ -1,0 +1,98 @@
+2025-03-14T06:13:17.170Z <subql-node> INFO Current @subql/node-starknet version is 5.9.0 
+2025-03-14T06:13:17.170Z <subql-node> INFO Current @subql/node-starknet version is 5.9.0 
+2025-03-14T06:13:17.280Z <ProjectUpgradeService> INFO Projects: {
+  "205": "/app"
+} 
+2025-03-14T06:13:17.317Z <nestjs> INFO Starting Nest application... 
+2025-03-14T06:13:17.346Z <nestjs> INFO AppModule dependencies initialized 
+2025-03-14T06:13:17.346Z <nestjs> INFO ConfigureModule dependencies initialized 
+2025-03-14T06:13:17.346Z <nestjs> INFO PrometheusModule dependencies initialized 
+2025-03-14T06:13:17.347Z <api> WARN skipTransactions is disabled, the project contains only event handlers, it could be enabled to improve indexing performance. 
+2025-03-14T06:13:17.347Z <api.starknet> INFO Api host: starknet-devnet, method: http 
+2025-03-14T06:13:17.350Z <nestjs> INFO DiscoveryModule dependencies initialized 
+2025-03-14T06:13:17.362Z <nestjs> INFO ScheduleModule dependencies initialized 
+2025-03-14T06:13:17.362Z <nestjs> INFO EventEmitterModule dependencies initialized 
+2025-03-14T06:13:17.375Z <db> WARN Database does not support SSL connection, will try to connect without it 
+2025-03-14T06:13:20.517Z <nestjs> INFO DbModule dependencies initialized 
+2025-03-14T06:13:20.518Z <indexer> INFO indexer manager start 
+2025-03-14T06:13:20.519Z <nestjs> INFO MetaModule dependencies initialized 
+2025-03-14T06:13:20.519Z <nestjs> INFO FetchModule dependencies initialized 
+2025-03-14T06:13:20.519Z <nestjs> INFO CoreModule dependencies initialized 
+2025-03-14T06:13:20.522Z <nestjs> INFO AdminController {/admin}: 
+2025-03-14T06:13:20.524Z <nestjs> INFO Mapped {/admin/index_history/range, GET} route 
+2025-03-14T06:13:20.524Z <nestjs> INFO Mapped {/admin/index_history/forks, GET} route 
+2025-03-14T06:13:20.525Z <nestjs> INFO Mapped {/admin/index_history/block/:blockHeight, GET} route 
+2025-03-14T06:13:20.525Z <nestjs> INFO Mapped {/admin/poi/range, GET} route 
+2025-03-14T06:13:20.525Z <nestjs> INFO Mapped {/admin/poi, GET} route 
+2025-03-14T06:13:20.526Z <nestjs> INFO Mapped {/admin/rewind, POST} route 
+2025-03-14T06:13:20.526Z <nestjs> INFO Mapped {/admin/db_size, GET} route 
+2025-03-14T06:13:20.526Z <nestjs> INFO HealthController {/health}: 
+2025-03-14T06:13:20.526Z <nestjs> INFO Mapped {/health, GET} route 
+2025-03-14T06:13:20.526Z <nestjs> INFO ReadyController {/ready}: 
+2025-03-14T06:13:20.526Z <nestjs> INFO Mapped {/ready, GET} route 
+2025-03-14T06:13:20.527Z <nestjs> INFO MetaController {/meta}: 
+2025-03-14T06:13:20.527Z <nestjs> INFO Mapped {/meta, GET} route 
+2025-03-14T06:13:20.527Z <nestjs> INFO PrometheusController {/metrics}: 
+2025-03-14T06:13:20.527Z <nestjs> INFO Mapped {/metrics, GET} route 
+2025-03-14T06:13:20.534Z <nestjs> INFO Nest application successfully started 
+2025-03-14T06:13:20.751Z <StoreService> INFO Historical state is height 
+2025-03-14T06:13:20.794Z <dynamic-ds> INFO Loaded 0 dynamic datasources 
+2025-03-14T06:13:21.168Z <api> WARN skipTransactions is disabled, the project contains only event handlers, it could be enabled to improve indexing performance. 
+2025-03-14T06:13:21.169Z <UnfinalizedBlocks> INFO Unfinalized blocks is enabled 
+2025-03-14T06:13:21.177Z <api.starknet> INFO First block is not finalized on L1. 
+2025-03-14T06:13:21.400Z <BlockDispatcherService> INFO Enqueueing blocks 205...205, total 1 blocks 
+2025-03-14T06:13:21.402Z <BlockDispatcherService> INFO Enqueueing blocks 206...206, total 1 blocks 
+2025-03-14T06:13:21.402Z <BlockDispatcherService> INFO Enqueueing blocks 207...207, total 1 blocks 
+2025-03-14T06:13:21.402Z <BlockDispatcherService> INFO Enqueueing blocks 208...208, total 1 blocks 
+2025-03-14T06:13:21.403Z <subql-node> INFO Node started on port: 3000 
+2025-03-14T06:13:22.404Z <BlockDispatcherService> INFO Enqueueing blocks 209...209, total 1 blocks 
+2025-03-14T06:13:22.405Z <BlockDispatcherService> INFO Enqueueing blocks 210...210, total 1 blocks 
+2025-03-14T06:13:22.405Z <BlockDispatcherService> INFO Enqueueing blocks 211...211, total 1 blocks 
+[2025-03-14T06:13:23.406Z] INFO: Using default public node url, please provide nodeUrl in provider options!
+2025-03-14T06:13:23.455Z <BlockDispatcherService> INFO Enqueueing blocks 212...212, total 1 blocks 
+2025-03-14T06:13:23.455Z <BlockDispatcherService> INFO Enqueueing blocks 213...213, total 1 blocks 
+2025-03-14T06:13:23.456Z <BlockDispatcherService> INFO Enqueueing blocks 214...214, total 1 blocks 
+2025-03-14T06:13:25.743Z <sandbox> INFO New ContractDeployed event at block 209 
+2025-03-14T06:13:25.743Z <sandbox> INFO Contrat deployed: 0x06f530ac511929059108909573fe58e8e9bf9e97b0d23417ffe281e3abcbc985 
+2025-03-14T06:13:25.744Z <dynamic-ds> INFO Created new dynamic datasource from template: "tppTransfer" 
+2025-03-14T06:13:26.460Z <BlockDispatcherService> INFO Enqueueing blocks 210...210, total 1 blocks 
+2025-03-14T06:13:26.460Z <BlockDispatcherService> INFO Enqueueing blocks 211...211, total 1 blocks 
+2025-03-14T06:13:26.460Z <BlockDispatcherService> INFO Enqueueing blocks 212...212, total 1 blocks 
+2025-03-14T06:13:27.466Z <BlockDispatcherService> INFO Enqueueing blocks 213...213, total 1 blocks 
+2025-03-14T06:13:27.466Z <BlockDispatcherService> INFO Enqueueing blocks 214...214, total 1 blocks 
+2025-03-14T06:13:27.466Z <BlockDispatcherService> INFO Enqueueing blocks 215...215, total 1 blocks 
+2025-03-14T06:13:28.466Z <BlockDispatcherService> INFO Enqueueing blocks 216...216, total 1 blocks 
+2025-03-14T06:13:28.466Z <BlockDispatcherService> INFO Enqueueing blocks 217...217, total 1 blocks 
+2025-03-14T06:13:28.466Z <BlockDispatcherService> INFO Enqueueing blocks 218...218, total 1 blocks 
+[2025-03-14T06:13:29.421Z] INFO: Using default public node url, please provide nodeUrl in provider options!
+2025-03-14T06:13:29.480Z <BlockDispatcherService> INFO Enqueueing blocks 219...219, total 1 blocks 
+2025-03-14T06:13:29.480Z <BlockDispatcherService> INFO Enqueueing blocks 220...220, total 1 blocks 
+2025-03-14T06:13:29.480Z <BlockDispatcherService> INFO Enqueueing blocks 221...221, total 1 blocks 
+2025-03-14T06:13:31.428Z <sandbox> INFO New ContractDeployed event at block 216 
+2025-03-14T06:13:31.428Z <sandbox> INFO Contrat deployed: 0x026432b99835556745918e5fc8507105eeecfeeaf0fb375d3fa5014422a49ca0 
+2025-03-14T06:13:31.429Z <dynamic-ds> INFO Created new dynamic datasource from template: "tppTransfer" 
+2025-03-14T06:13:31.496Z <BlockDispatcherService> INFO Enqueueing blocks 217...217, total 1 blocks 
+2025-03-14T06:13:31.496Z <BlockDispatcherService> INFO Enqueueing blocks 218...218, total 1 blocks 
+2025-03-14T06:13:31.496Z <BlockDispatcherService> INFO Enqueueing blocks 219...219, total 1 blocks 
+[2025-03-14T06:13:32.447Z] INFO: Using default public node url, please provide nodeUrl in provider options!
+2025-03-14T06:13:32.497Z <BlockDispatcherService> INFO Enqueueing blocks 220...220, total 1 blocks 
+2025-03-14T06:13:32.497Z <BlockDispatcherService> INFO Enqueueing blocks 221...221, total 1 blocks 
+2025-03-14T06:13:32.498Z <BlockDispatcherService> INFO Enqueueing blocks 222...222, total 1 blocks 
+2025-03-14T06:13:33.498Z <BlockDispatcherService> INFO Enqueueing blocks 223...223, total 1 blocks 
+2025-03-14T06:13:34.454Z <sandbox> INFO New Tpp Transfer event at block 218 with dynamic handler 
+2025-03-14T06:13:35.501Z <BlockDispatcherService> INFO Enqueueing blocks 224...224, total 1 blocks 
+2025-03-14T06:13:35.501Z <BlockDispatcherService> INFO Enqueueing blocks 225...225, total 1 blocks 
+2025-03-14T06:13:35.501Z <BlockDispatcherService> INFO Enqueueing blocks 226...226, total 1 blocks 
+2025-03-14T06:13:36.515Z <BlockDispatcherService> INFO Enqueueing blocks 227...227, total 1 blocks 
+2025-03-14T06:13:36.515Z <BlockDispatcherService> INFO Enqueueing blocks 228...228, total 1 blocks 
+2025-03-14T06:13:36.515Z <BlockDispatcherService> INFO Enqueueing blocks 229...229, total 1 blocks 
+2025-03-14T06:13:37.516Z <BlockDispatcherService> INFO Enqueueing blocks 230...230, total 1 blocks 
+2025-03-14T06:13:37.516Z <BlockDispatcherService> INFO Enqueueing blocks 231...231, total 1 blocks 
+2025-03-14T06:13:37.516Z <BlockDispatcherService> INFO Enqueueing blocks 232...232, total 1 blocks 
+2025-03-14T06:13:38.517Z <BlockDispatcherService> INFO Enqueueing blocks 233...233, total 1 blocks 
+2025-03-14T06:13:38.517Z <BlockDispatcherService> INFO Enqueueing blocks 234...234, total 1 blocks 
+2025-03-14T06:13:38.517Z <BlockDispatcherService> INFO Enqueueing blocks 235...235, total 1 blocks 
+2025-03-14T06:13:39.519Z <BlockDispatcherService> INFO Enqueueing blocks 236...236, total 1 blocks 
+2025-03-14T06:13:39.520Z <BlockDispatcherService> INFO Enqueueing blocks 237...237, total 1 blocks 
+2025-03-14T06:13:39.520Z <BlockDispatcherService> INFO Enqueueing blocks 238...238, total 1 blocks 
+2025-03-14T06:13:40.522Z <BlockDispatcherService> INFO Enqueueing blocks 239...239, total 1 blocks 
