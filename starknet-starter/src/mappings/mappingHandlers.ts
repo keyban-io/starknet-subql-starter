@@ -1,68 +1,7 @@
 import { StarknetLog } from "@subql/types-starknet";
-import { BigNumber } from "ethers";
 
 import { createtppTransferDatasource } from "../types";
-
-/***
- *
- * 
- *     {
- *       "data": [
- *         {
- *           "name": "address",
- *           "type": "felt"
- *         },
- *         {
- *           "name": "deployer",
- *           "type": "felt"
- *         },
- *         {
- *           "name": "unique",
- *           "type": "felt"
- *         },
- *         {
- *           "name": "classHash",
- *           "type": "felt"
- *         },
- *         {
- *           "name": "calldata_len",
- *           "type": "felt"
- *         },
- *         {
- *           "name": "calldata",
- *           "type": "felt*"
- *         },
- *         {
- *           "name": "salt",
- *           "type": "felt"
- *         }
- *       ],
- *       "keys": [],
- *       "name": "ContractDeployed",
- *       "type": "event"
- *     },
- * 
- */
-
-type ContractDeployedEvent = {
-    address: any;
-    deployer: any;
-    unique: any;
-    classHash: any;
-    calldata_len: any;
-    calldata: any;
-    salt:       any;        
- };
-
-type ContractDeployedArgs = {
-  "ContractDeployed": ContractDeployedEvent;
-  block_hash: string;
-  block_number: number;
-  transaction_hash: string;
-};
-
-// @ts-ignore
-type ContractDeployedLog = StarknetLog<ContractDeployedArgs>;
+import {BigNumber} from "ethers";
 
  /**
   * 
@@ -154,31 +93,24 @@ async function sleep(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-export async function handleContractDeployed(log: ContractDeployedLog): Promise<void> {
+export async function handleKeybanContractDeployed(log: KeybanContractDeployedLog): Promise<void> {
   await sleep(2000);
-  logger.info(`New ContractDeployed event at block ${log.blockNumber}`);
-  const deployedContractAddress = BigNumber.from(log.args?.ContractDeployed.address).toHexString();
-  logger.info(`Contrat deployed: ${deployedContractAddress}`);
-  // debug(log);
-  createtppTransferDatasource({
-    address: deployedContractAddress,
-  });
+  const [, classHash, contractAddress] = log.topics;
+  logger.info(`New KeybanContractDeployed event at block ${log.blockNumber}`);
+  //debug(log);
+  logger.info(`Contrat deployed: ${contractAddress}, class hash: ${classHash}`);
+
+  if (classHash.toLowerCase() === "0x465f43678bed94c77425be409c7e7a1dea76db331f0520db3eafeff1d2d46e2".toLowerCase()) { // tpp contract
+    await createtppTransferDatasource({
+      address: contractAddress,
+    });
+  }
 }
 
 export async function handleTransfer(log: TransferLog): Promise<void> {
   await sleep(2000);
   logger.info(`New Tpp Transfer event at block ${log.blockNumber}`);
   // debug(log);
-}
-
-export async function emptyHandler(log: StarknetLog): Promise<void> {
-  await sleep(2000);
-  logger.info(`Empty handler at block ${log.blockNumber}`);
-}
-
-export async function handleTransferDynamically(log: TransferLog): Promise<void> {
-  await sleep(2000);
-  logger.info(`New Tpp Transfer event at block ${log.blockNumber} with dynamic handler`);
 }
 
 export const debug = (value: any) =>

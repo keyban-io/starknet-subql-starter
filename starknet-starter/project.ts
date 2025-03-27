@@ -54,32 +54,17 @@ const project: StarknetProject = {
     endpoint: process.env.ENDPOINT!?.split(",") as string[] | string,
   },
   dataSources: [
-//     {
-//       kind: StarknetDatasourceKind.Runtime,
-//       startBlock: 205,
-//       endBlock: 220,
-//       mapping: {
-//         file: "./dist/index.js",
-//         handlers: [
-//           /// Static data source handler
-//           {
-//             kind: StarknetHandlerKind.Event,
-//             handler: "emptyHandler",
-//           },
-//         ],
-//       },
-//     },
     {
       kind: StarknetDatasourceKind.Runtime,
-      startBlock: 205,
-      endBlock: 220,
+      startBlock: 675,
+      endBlock: 705,
       options: {
-        abi: "udc",
+        abi: "factory",
         address:
-           "0x041a78e741e5af2fec34b695679bc6891742439f7afb8484ecd7766661ad02bf", 
+           "0x3183c8ae9b6055ac51250b4e602ba24b897bf51a06e48133bc37b17ad6d1801", 
       },
       assets: new Map([
-        ["udc", { file: "./abis/udc.abi.json" }], 
+        ["factory", { file: "./abis/factory.abi.json" }], 
       ]),
 
       mapping: {
@@ -87,42 +72,16 @@ const project: StarknetProject = {
         handlers: [
           {
             kind: StarknetHandlerKind.Event,
-            handler: "handleContractDeployed",
+            handler: "handleKeybanContractDeployed",
             filter: {
               topics: [
-                "ContractDeployed", 
+                "KeybanContractDeployed", 
               ],
             },
           },
         ],
       },
     },
-    // {
-    //   kind: StarknetDatasourceKind.Runtime,
-    //   startBlock: 205,
-    //   endBlock: 220,
-    //   options:{
-    //     abi: "tpp",
-    //     address: "0x026432b99835556745918e5fc8507105eeecfeeaf0fb375d3fa5014422a49ca0",
-    //   },
-    //   assets: new Map([
-    //     ["tpp", { file: "./abis/tpp.abi.json" }] 
-    //   ]),
-    //   mapping: {
-    //     file: "./dist/index.js",
-    //     handlers: [
-    //       {
-    //         kind: StarknetHandlerKind.Event,
-    //         handler: "handleTransfer",
-    //         filter: {
-    //           topics: [
-    //             "Transfer", 
-    //           ],
-    //         },
-    //       },
-    //     ],
-    //   }
-    // },
   ],
   templates: 
     [
@@ -140,7 +99,7 @@ const project: StarknetProject = {
           handlers: [
             {
               kind: StarknetHandlerKind.Event,
-              handler: "handleTransferDynamically",
+              handler: "handleTransfer",
               filter: {
                 topics: [
                   "Transfer", 
